@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="desctiption" content="A form to register for something">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>My Registration Form</h1>
+    <form action="process.php" method="POST">
+        <label>
+            First Name: <input type="text" name="firstname">
+        </label>
+        <p></p>
+        <label>
+            Last Name: <input type="text" name="lastname">
+        </label>
+        <p></p>
+        <label>
+            Email: <input type="text" name="email">
+        </label>
+        <p></p>
+        <label>
+            Password <input type="password" name="password">
+        </label>
+        <p></p>
+        <label>
+            PW Confirm: <input type="password" name="passwordconfirm">
+        </label>
+        <p></p>
+        <label>
+            Birthday: <input type="date" name="birthday">
+        </label>
+        <p>Select your Gender:</p>
+        <label>
+            <input type="radio" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other"> Other
+        </label>
+        <p>A short description about yourself</p>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <p></p>
+        <label>
+            Favorite Language: <select name="codinglanguage">
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="c#">C#</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="java">Java</option>
+            </select>
+        </label>
+        <p></p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
